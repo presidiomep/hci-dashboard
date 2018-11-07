@@ -79,7 +79,7 @@
     "tslint": "~5.11.0",
     "typescript": "2.7.2"
   },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.",
+  "description": "HCI Employee Dashboard",
   "main": "karma.conf.js",
   "keywords": [],
   "author": ""
