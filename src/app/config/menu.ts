@@ -158,11 +158,6 @@ export class MenuConfig implements ConfigModel {
 						icon: 'flaticon-statistics',
 						toggle: 'click',
 						translate: 'Project Management',
-						badge: {
-							type: 'm-badge--brand m-badge--wide',
-							value: 'new',
-							translate: 'MENU.NEW',
-						},
 						submenu: {
 							type: 'classic',
 							alignment: 'left',
@@ -284,7 +279,7 @@ export class MenuConfig implements ConfigModel {
 					,{
 						title: 'Estimating',
 						root: true,
-						icon: 'flaticon-line-graph',
+						icon: 'flaticon-coins',
 						toggle: 'click',
 						translate: 'Estimating',
 						submenu: {
@@ -449,7 +444,7 @@ export class MenuConfig implements ConfigModel {
 					{
 						title: 'Clients',
 						root: true,
-						icon: 'flaticon-line-graph',
+						icon: 'flaticon-users',
 						toggle: 'click',
 						translate: 'Clients',
 						submenu: {
