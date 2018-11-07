@@ -40,8 +40,8 @@ export class LayoutConfig implements ConfigModel {
 					}
 				},
 				logo: {
-					dark: './assets/demo/default/media/img/logo/logo_default_dark.png',
-					light: './assets/demo/default/media/img/logo/logo_default_light.png'
+					dark: './assets/app/media/img/logos/hci-logo-small.png',
+					light: './assets/app/media/img/logos/hci-logo-small.png'
 				}
 			},
 

@@ -445,7 +445,7 @@ export class MenuConfig implements ConfigModel {
 								}
 							]
 						}
-					}
+					},
 					{
 						title: 'Clients',
 						root: true,
