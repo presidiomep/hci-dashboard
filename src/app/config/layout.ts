@@ -129,7 +129,7 @@ export class LayoutConfig implements ConfigModel {
 
 		// == Content
 		content: {
-			skin: 'light2' // Select main content skin from available options: light|light2,
+			skin: 'light' // Select main content skin from available options: light|light2,
 		},
 
 		// == Footer
@@ -139,7 +139,7 @@ export class LayoutConfig implements ConfigModel {
 
 		// == Quick Sidebar
 		quicksidebar: {
-			display: true // Display or hide quicksidebar
+			display: false // Display or hide quicksidebar
 		},
 
 		// == Portlet Plugin

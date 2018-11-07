@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoughnutChartComponent implements OnInit {
 	// Doughnut
-	public doughnutChartLabels: string[] = ['Download', 'In-Store', 'Mail-Order'];
+	public doughnutChartLabels: string[] = ['Material', 'Labor', 'Indirects'];
 	public doughnutChartData: number[] = [350, 450, 100];
 	public doughnutChartType: string = 'doughnut';
 
