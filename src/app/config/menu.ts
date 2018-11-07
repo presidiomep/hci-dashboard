@@ -13,7 +13,7 @@ export class MenuConfig implements ConfigModel {
 					{
 						title: 'HCI Resources',
 						root: true,
-						icon: 'flaticon-add',
+						icon: 'flaticon-home-1',
 						toggle: 'click',
 						translate: 'HCI Resources',
 						submenu: {
@@ -155,7 +155,7 @@ export class MenuConfig implements ConfigModel {
 					{
 						title: 'Project Management',
 						root: true,
-						icon: 'flaticon-paper-plane',
+						icon: 'flaticon-statistics',
 						toggle: 'click',
 						translate: 'Project Management',
 						badge: {
