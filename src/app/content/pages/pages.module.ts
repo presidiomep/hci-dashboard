@@ -13,6 +13,9 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
+import { ClientsComponent } from './clients/clients.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { EstimatesComponent } from './estimates/estimates.component';
 
 @NgModule({
 	declarations: [
@@ -20,6 +23,9 @@ import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 		ActionComponent,
 		ProfileComponent,
 		ErrorPageComponent,
+		ClientsComponent,
+		ProjectsComponent,
+		EstimatesComponent,
 	],
 	imports: [
 		CommonModule,
