@@ -17,6 +17,27 @@ import { LayoutRefService } from '../../core/services/layout/layout-ref.service'
 import { AnimationBuilder, AnimationPlayer, style, animate } from '@angular/animations';
 import { TranslationService } from '../../core/services/translation.service';
 
+import {
+    Stitch,
+    RemoteMongoClient,
+    AnonymousCredential
+} from "mongodb-stitch-browser-sdk";
+
+const client = Stitch.initializeDefaultAppClient('clientportal-ctija');
+
+const db = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas').db('HCI');
+
+client.auth.loginWithCredential(new AnonymousCredential()).then(user =>
+  db.collection('Users.HCI-Employees').updateOne({owner_id: client.auth.user.id}, {$set:{number:42}}, {upsert:true})
+).then(() =>
+  db.collection('Users.HCI-Employees').find({owner_id: client.auth.user.id}, { limit: 100}).asArray()
+).then(docs => {
+    console.log("Found docs", docs)
+    console.log("[MongoDB Stitch] Connected to Stitch")
+}).catch(err => {
+    console.error(err)
+});
+
 @Component({
 	selector: 'm-pages',
 	templateUrl: './pages.component.html',
